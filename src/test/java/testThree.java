@@ -10,7 +10,7 @@ public class testThree {
     @DisplayName("Third Test")
     public void testIsUncovered() {
         Block blockTestThree = new Block(1, 1);
-        blockTestThree.setUncovered(true);
-        assertTrue(blockTestThree.isUncovered(), "This is uncovered");
+        blockTestThree.setUncovered(false);
+        assertTrue(blockTestThree.isUncovered(), "This is not uncovered");
     }
 }
