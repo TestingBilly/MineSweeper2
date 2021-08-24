@@ -8,7 +8,10 @@
     <artifactId>Minesweeper2</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <packaging>jar</packaging>
+
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
         <sonar.organization>testingbilly</sonar.organization>
@@ -47,10 +50,10 @@
                 <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>${jacoco.version}</version>
+                    <version>0.8.7</version>
                     <configuration>
-                        <destFile>${basedir}/target/coverage-reports/jacoco-unit.exec</destFile>
-                        <dataFile>${basedir}/target/coverage-reports/jacoco-unit.exec</dataFile>
+                        <destFile>${basedir}/target/jacoco-unit.mxl</destFile>
+                        <dataFile>${basedir}/target/jacoco-unit.mxl</dataFile>
                         <output>file</output>
                         <append>true</append>
                         <excludes>
