@@ -9,7 +9,7 @@ public class testTwo {
     @Test
     @DisplayName("Second Test")
     public void testIsBomb() {
-        Block blockTest = new Block(2, 2);
+        Block blockTest = new Block(1, 1);
         blockTest.setBomb(true);
         assertTrue(blockTest.isBomb(), "This is a bomb");
     }

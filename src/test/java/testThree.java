@@ -9,7 +9,7 @@ public class testThree {
     @Test
     @DisplayName("Third Test")
     public void testIsUncovered() {
-        Block blockTestThree = new Block(3, 3);
+        Block blockTestThree = new Block(1, 1);
         blockTestThree.setUncovered(true);
         assertTrue(blockTestThree.isUncovered(), "This is uncovered");
     }
