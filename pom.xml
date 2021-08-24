@@ -53,6 +53,12 @@
                     <artifactId>jacoco</artifactId>
                     <version>0.8.8-SNAPSHOT</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>org.jacoco.build</artifactId>
+                    <version>0.8.7</version>
+
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
