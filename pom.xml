@@ -54,7 +54,6 @@
                     <artifactId>jacoco-maven-plugin</artifactId>
                     <version>0.8.8-SNAPSHOT</version>
                     <executions>
-
                         <execution>
                             <id>report</id>
                             <phase>prepare-package</phase>
