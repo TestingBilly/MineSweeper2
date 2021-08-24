@@ -1,9 +1,10 @@
 package minesweeper;
+
 import org.junit.jupiter.api.DisplayName;
 import org.testng.annotations.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class TestOne
