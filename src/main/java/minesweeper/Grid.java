@@ -4,8 +4,8 @@ package minesweeper;
 public class Grid
 {
     private final Block[][] mineSweeperGrid;
-    private int length;
-    private int height;
+    int length;
+    int height;
 
 
 
