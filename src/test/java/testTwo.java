@@ -10,7 +10,6 @@ public class testTwo {
     @DisplayName("Second Test")
     public void testIsBomb() {
         Block blockTest = new Block(1, 1);
-        blockTest.setBomb(false);
         assertTrue(blockTest.isBomb(), "This is not a bomb");
     }
 }
