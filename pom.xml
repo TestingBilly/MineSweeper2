@@ -52,13 +52,10 @@
                     <artifactId>jacoco-maven-plugin</artifactId>
                     <version>0.8.7</version>
                     <configuration>
-                        <destFile>${basedir}/target/jacoco-unit.mxl</destFile>
-                        <dataFile>${basedir}/target/jacoco-unit.mxl</dataFile>
+                        <destFile>/target/jacoco-unit.mxl</destFile>
+                        <dataFile>/target/jacoco-unit.mxl</dataFile>
                         <output>file</output>
                         <append>true</append>
-                        <excludes>
-                            <exclude>*MethodAccess</exclude>
-                        </excludes>
                     </configuration>
                     <executions>
                         <execution>
