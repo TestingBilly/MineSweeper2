@@ -6,7 +6,7 @@ public class Block
     private Block[][] pinger;
     private boolean isBomb;
     private boolean isUncovered = true;
-     int bombsNextTo;
+    int bombsNextTo;
     private boolean isFlagged;
 
 
@@ -91,14 +91,14 @@ public class Block
                     else{
                         if (pinger[a+i][b+j].isBomb) {
                             pinger[a][b].bombsNextTo++;}}
-                }else{}
+                }
             }
         }
     }
     private void bombCounter(){
-            for(int a = 0; a <= y-1; a++)
+            for(int a = 0; a <= x-1; a++)
             {
-                for(int b = 0; b <= x-1; b++)
+                for(int b = 0; b <= y-1; b++)
                 {
                     checkNearBombs(a,b);
                 }
@@ -114,7 +114,10 @@ public class Block
         if (!isBomb && isUncovered)
         {
             return "[" + bombsNextTo + "]";
-
+        }
+        if (isFlagged)
+        {
+            return "[P]";
         }
 
         return "[" + x + y + "]";
