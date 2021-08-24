@@ -3,10 +3,12 @@ package minesweeper;
 
 public class Block
 {
+    private Block[][] pinger;
     private boolean isBomb;
-    private boolean isUncovered;
-    private int [][] bombsNextTo;
+    private boolean isUncovered = true;
+     int bombsNextTo;
     private boolean isFlagged;
+
 
     public int y;
     public int x;
@@ -28,11 +30,19 @@ public class Block
         isUncovered = uncovered;
     }
 
-    public int[][] getBombsNextTo() {
+    public Block[][] getPinger() {
+        return pinger;
+    }
+
+    public void setPinger(Block[][] pinger) {
+        this.pinger = pinger;
+    }
+
+    public int getBombsNextTo() {
         return bombsNextTo;
     }
 
-    public void setBombsNextTo(int[][] bombsNextTo) {
+    public void setBombsNextTo(int bombsNextTo) {
         this.bombsNextTo = bombsNextTo;
     }
 
@@ -58,6 +68,8 @@ public class Block
         this.x = x;
         this.y = y;
 
+
+
         float randomBombing = (float) Math.random();
         float ratioOfBombs = 0.25f;
         if (randomBombing <= ratioOfBombs)
@@ -71,28 +83,38 @@ public class Block
 
 
     }
-    //  public int nearBombs(int x, int y)
-//  {
-//      int no = 0;
-//      for (int offsetX=-1; offsetX<=1; offsetX++)
-//      {
-//          for (int offsetY=-1; offsetY<=1; offsetY++)
-//          {
-//              no+=bombsNextTo[offsetX+x][offsetY+y];
-//           }
-//      }
-//     return no;
-    //}
+    public void checkNearBombs(int a,int b){
+        for(int i = -1; i <= 1; i++){
+            for(int j = -1; j <= 1; j++){
+                if(a+i >= 0 && a+i <= 9 && b+j >= 0 && b+j <= 9){
+                    if(i==0 && j==0){}
+                    else{
+                        if (pinger[a+i][b+j].isBomb) {
+                            pinger[a][b].bombsNextTo++;}}
+                }else{}
+            }
+        }
+    }
+    private void bombCounter(){
+            for(int a = 0; a <= y-1; a++)
+            {
+                for(int b = 0; b <= x-1; b++)
+                {
+                    checkNearBombs(a,b);
+                }
+            }
+    }
+
     public String toString ()
     {
         if (isBomb && isUncovered)
         {
-            return "X";
+            return "[X]";
         }
         if (!isBomb && isUncovered)
         {
-            // return "" + nearBombs(this.x,this.y) + "";
-            return "0";
+            return "[" + bombsNextTo + "]";
+
         }
 
         return "[" + x + y + "]";

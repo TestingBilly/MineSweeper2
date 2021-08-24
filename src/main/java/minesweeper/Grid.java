@@ -8,9 +8,25 @@ public class Grid
     private int height;
 
 
+
+    public int getLength() {
+        return length;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
     public Grid (int length, int height)
     {
-
         this.length = length;
         this.height = height;
 
@@ -29,9 +45,7 @@ public class Grid
             {
                 mineSweeperGrid [i][j] = new Block(i,j);
             }
-
         }
-
     }
 
     public String toString()
