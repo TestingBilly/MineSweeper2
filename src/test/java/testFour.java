@@ -15,8 +15,8 @@ public class testFour {
     @DisplayName("Fourth Test")
     public void gridSize (){
         System.out.println(testGrid);
-        assertEquals(10, (testGrid.height), "Grid Height is correct");
-        assertEquals(10, (testGrid.length), "Grid Length is correct");
+        assertEquals(9, (testGrid.selectSquare(9,9).x), "Grid Height is correct");
+        assertEquals(9, (testGrid.selectSquare(9,9).y), "Grid Length is correct");
 
     }
 }
