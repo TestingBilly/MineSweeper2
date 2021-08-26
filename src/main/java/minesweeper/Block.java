@@ -5,7 +5,7 @@ public class Block
 {
     private Block[][] pinger;
     private boolean isBomb;
-    private boolean isUncovered = true;
+    private boolean isUncovered;
     int bombsNextTo;
     private boolean isFlagged;
 
