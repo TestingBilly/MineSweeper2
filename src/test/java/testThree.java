@@ -12,8 +12,5 @@ public class testThree {
     public void testIsUncovered() {
         Block blockTestThree = new Block(1, 1);
         assertFalse(blockTestThree.isUncovered(), "This is not uncovered");
-        assertTrue(blockTestThree.isUncovered(), "This is uncovered");
-
-
     }
 }
