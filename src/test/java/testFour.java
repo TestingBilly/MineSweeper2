@@ -13,8 +13,8 @@ public class testFour {
     @Test
     @DisplayName("Fourth Test")
     public void gridSize (){
-        assertEquals(10, testGrid.height, "Grid Height is correct");
-        assertEquals(10, testGrid.length, "Grid Length is correct");
+        assertEquals(10, (testGrid.height), "Grid Height is correct");
+        assertEquals(10, (testGrid.length), "Grid Length is correct");
 
     }
 }
