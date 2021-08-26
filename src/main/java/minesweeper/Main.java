@@ -6,10 +6,8 @@ public class Main
 {
     public static void main (String[] args)
     {
-        Grid currentGame = new Grid(10, 10);
+         Grid currentGame = new Grid(10, 10);
         boolean gameOver = false;
-
-
 
 
         while(!gameOver)
@@ -32,6 +30,7 @@ public class Main
             inputY =playerY.nextInt();
             playerY.nextLine();
 
+            currentGame.selectSquare(inputX,inputY).setUncovered(true);
             if (currentGame.selectSquare(inputX,inputY).isBomb())
             {
                 System.out.println(currentGame);
