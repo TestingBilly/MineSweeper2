@@ -7,10 +7,12 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class testThree {
+    Grid testGrid = new Grid(10, 10);
     @Test
     @DisplayName("Third Test")
     public void testIsUncovered() {
-        Block blockTestThree = new Block(1, 1);
-        assertFalse(blockTestThree.isUncovered(), "This is not uncovered");
+
+        System.out.println(testGrid);
+        assertFalse(testGrid.selectSquare(1,1).isUncovered (), "This is uncovered");
     }
 }
