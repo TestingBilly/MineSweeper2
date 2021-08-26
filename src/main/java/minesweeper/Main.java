@@ -6,8 +6,9 @@ public class Main
 {
     public static void main (String[] args)
     {
-        Grid currentGame = new Grid(10, 10);
+         Grid currentGame = new Grid(10, 10);
         boolean gameOver = false;
+
 
         while(!gameOver)
         {
@@ -36,7 +37,11 @@ public class Main
                 System.out.print("Ooops Game Over");
                 gameOver = true;
             }
+
+
         }
+
+
     }
 
 }
