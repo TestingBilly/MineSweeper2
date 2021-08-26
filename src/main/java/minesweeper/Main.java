@@ -6,7 +6,7 @@ public class Main
 {
     public static void main (String[] args)
     {
-         Grid currentGame = new Grid(10, 10);
+        Grid currentGame = new Grid(10, 10);
         boolean gameOver = false;
 
 

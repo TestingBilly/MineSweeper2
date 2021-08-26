@@ -15,10 +15,5 @@ public class testTwo {
         testGrid.selectSquare(1,1).setBomb(false);
         assertFalse(testGrid.selectSquare(1,1).isBomb (), "This is not a bomb");
 
-        assertFalse(testGrid.selectSquare(1,1).isUncovered (), "This is uncovered");
-
-        assertEquals(9, (testGrid.selectSquare(9,9).x), "Grid Height is correct");
-        assertEquals(9, (testGrid.selectSquare(9,9).y), "Grid Length is correct");
-
     }
 }
