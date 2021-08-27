@@ -37,10 +37,7 @@ public class Main
                 break;
             }
 
-
         }
-        System.out.println("Sorry Something went wrong, please re open the game");
-
 
     }
 

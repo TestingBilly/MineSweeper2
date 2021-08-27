@@ -1,10 +1,12 @@
 package minesweeper;
 
 
+import java.util.Random;
+
 public class Block
 {
     private boolean isBomb;
-    private boolean isUncovered = true;
+    private boolean isUncovered;
     int bombsNextTo;
     private boolean isFlagged;
 
@@ -48,6 +50,7 @@ public class Block
 
         float randomBombing = (float) Math.random();
         float ratioOfBombs = 0.25f;
+
         if (randomBombing <= ratioOfBombs)
         {
             isBomb = true;
@@ -56,10 +59,7 @@ public class Block
         {
             isBomb= false;
         }
-
-
     }
-
 
     public String toString ()
     {

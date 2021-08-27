@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 public class TestSix {
     Grid testGrid = new Grid(10, 10);
     @Test
-    @DisplayName("Third Test")
+    @DisplayName("Sixth  Test")
     public void testIsNotFlagged() {
         testGrid.selectSquare(1,1).setFlagged(false);
 
