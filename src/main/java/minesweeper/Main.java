@@ -48,5 +48,4 @@ public class Main
 
 ////Make game playable
 ////win/loss conditions
-////Make next to bombs number work
 ////make flags work

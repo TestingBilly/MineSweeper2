@@ -3,7 +3,6 @@ package minesweeper;
 
 public class Block
 {
-    private Block[][] pinger;
     private boolean isBomb;
     private boolean isUncovered = true;
     int bombsNextTo;
