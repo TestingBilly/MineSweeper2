@@ -49,7 +49,6 @@
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../target/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
         <sonar.language>java</sonar.language>
-        <sonar.coverage.exclusions>**/*Main.java</sonar.coverage.exclusions>
 
     </properties>
     <build>
