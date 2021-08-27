@@ -15,8 +15,6 @@ public class Main
             System.out.println(currentGame);
             int inputX;
             int inputY;
-
-          //  System.out.println("Enter the first number of the block you want to check");
             System.out.println("Enter the first number of the block you want to check");
 
             Scanner playerX = new Scanner(System.in);
@@ -36,10 +34,12 @@ public class Main
                 System.out.println(currentGame);
                 System.out.print("Ooops Game Over");
                 gameOver = true;
+                break;
             }
 
 
         }
+        System.out.println("Sorry Something went wrong, please re open the game");
 
 
     }
