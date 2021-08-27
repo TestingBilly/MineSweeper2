@@ -5,7 +5,7 @@ public class Block
 {
     private Block[][] pinger;
     private boolean isBomb;
-    private boolean isUncovered;
+    private boolean isUncovered = true;
     int bombsNextTo;
     private boolean isFlagged;
 
@@ -39,6 +39,14 @@ public class Block
     }
 
 
+    public int getBombsNextTo() {
+        return bombsNextTo;
+    }
+
+    public void setBombsNextTo(int bombsNextTo) {
+        this.bombsNextTo = bombsNextTo;
+    }
+
     public Block(int x, int y)
     {
         this.x = x;
@@ -59,27 +67,7 @@ public class Block
 
 
     }
-    public void checkNearBombs(int a,int b){
-        for(int i = -1; i <= 1; i++){
-            for(int j = -1; j <= 1; j++){
-                if(a+i >= 0 && a+i <= 9 && b+j >= 0 && b+j <= 9){
-                    if(i==0 && j==0){}
-                    else{
-                        if (pinger[a+i][b+j].isBomb) {
-                            pinger[a][b].bombsNextTo++;}}
-                }
-            }
-        }
-    }
-    private void bombCounter(){
-            for(int a = 0; a <= x-1; a++)
-            {
-                for(int b = 0; b <= y-1; b++)
-                {
-                    checkNearBombs(a,b);
-                }
-            }
-    }
+
 
     public String toString ()
     {
