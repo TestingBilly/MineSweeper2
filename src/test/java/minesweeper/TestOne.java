@@ -13,7 +13,7 @@ public class TestOne
     @DisplayName("First Test")
     public void testGetName(){
         Block block = new Block(1,1);
-        assertEquals(1,1,"This worked?");
+        assertEquals(1,block.y,"This worked?");
 
     }
 
