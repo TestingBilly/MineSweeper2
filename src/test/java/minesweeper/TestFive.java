@@ -12,9 +12,6 @@ public class TestFive {
     @Test
     @DisplayName("Fifth Test")
     public void bombCounter (){
-        testGrid.selectSquare(0,1).setBomb(true);
-        testGrid.selectSquare(1,0).setBomb(true);
-        testGrid.selectSquare(1,1).setBomb(true);
         testGrid.selectSquare(0,0).setBombsNextTo(2);
         System.out.println(testGrid);
 
