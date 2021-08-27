@@ -11,13 +11,12 @@ public class TestOne
 {
     @Test
     @DisplayName("First Test")
-    public void testGetName(){
+    public void testGetName()
+    {
         Block block = new Block(1,1);
         assertEquals(1,block.x,"This worked?");
         assertEquals(1,block.y,"This worked?");
-
     }
-
 
 }
 

@@ -9,7 +9,8 @@ public class TestSix {
     Grid testGrid = new Grid(10, 10);
     @Test
     @DisplayName("Sixth  Test")
-    public void testIsNotFlagged() {
+    public void testIsNotFlagged()
+    {
         testGrid.selectSquare(1,1).setFlagged(false);
 
         System.out.println(testGrid);

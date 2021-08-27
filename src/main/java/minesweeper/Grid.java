@@ -6,7 +6,8 @@ public class Grid {
     int length;
     int height;
 
-    public Grid(int length, int height) {
+    public Grid(int length, int height)
+    {
         this.length = length;
         this.height = height;
 
