@@ -11,7 +11,7 @@ public class TestThree {
     @Test
     @DisplayName("Third Test")
     public void testIsUncovered() {
-
+        testGrid.selectSquare(1,1).setUncovered(false);
         System.out.println(testGrid);
         assertFalse(testGrid.selectSquare(1,1).isUncovered (), "This is uncovered");
 

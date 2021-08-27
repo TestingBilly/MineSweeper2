@@ -10,6 +10,7 @@ public class TestSix {
     @Test
     @DisplayName("Third Test")
     public void testIsNotFlagged() {
+        testGrid.selectSquare(1,1).setFlagged(false);
 
         System.out.println(testGrid);
         assertFalse(testGrid.selectSquare(1,1).isFlagged (), "This is notFlagged");
