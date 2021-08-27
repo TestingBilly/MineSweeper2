@@ -30,22 +30,6 @@ public class Block
         isUncovered = uncovered;
     }
 
-    public Block[][] getPinger() {
-        return pinger;
-    }
-
-    public void setPinger(Block[][] pinger) {
-        this.pinger = pinger;
-    }
-
-    public int getBombsNextTo() {
-        return bombsNextTo;
-    }
-
-    public void setBombsNextTo(int bombsNextTo) {
-        this.bombsNextTo = bombsNextTo;
-    }
-
     public boolean isFlagged() {
         return isFlagged;
     }
@@ -54,14 +38,6 @@ public class Block
         isFlagged = flagged;
     }
 
-    public  int getY() {
-        return y;
-    }
-
-
-    public int getX() {
-        return x;
-    }
 
     public Block(int x, int y)
     {

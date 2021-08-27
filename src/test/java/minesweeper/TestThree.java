@@ -14,6 +14,5 @@ public class TestThree {
         testGrid.selectSquare(1,1).setUncovered(false);
         System.out.println(testGrid);
         assertFalse(testGrid.selectSquare(1,1).isUncovered (), "This is uncovered");
-
     }
 }
