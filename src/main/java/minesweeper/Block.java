@@ -38,11 +38,6 @@ public class Block
         isFlagged = flagged;
     }
 
-
-    public int getBombsNextTo() {
-        return bombsNextTo;
-    }
-
     public void setBombsNextTo(int bombsNextTo) {
         this.bombsNextTo = bombsNextTo;
     }
@@ -51,8 +46,6 @@ public class Block
     {
         this.x = x;
         this.y = y;
-
-
 
         float randomBombing = (float) Math.random();
         float ratioOfBombs = 0.25f;
