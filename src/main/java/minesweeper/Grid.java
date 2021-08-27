@@ -51,6 +51,7 @@ public class Grid {
                         if (i< 9 && j < 9 && mineSweeperGrid[i + 1][j + 1].isBomb()) {
                             adjMines++;
                         }
+
                         mineSweeperGrid[i][j].setBombsNextTo(adjMines);
                     }
         }

@@ -69,6 +69,7 @@ public class Block
         }
         if (!isBomb && isUncovered)
         {
+
             return "[" + bombsNextTo + "]";
         }
         if (isFlagged)
