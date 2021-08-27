@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class testFour {
+public class TestFour {
 
     Grid testGrid = new Grid(10, 10);
 
@@ -20,3 +20,4 @@ public class testFour {
 
     }
 }
+

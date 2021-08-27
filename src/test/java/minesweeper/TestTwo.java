@@ -1,12 +1,14 @@
 package minesweeper;
 
+
+
 import org.junit.jupiter.api.DisplayName;
 import org.testng.annotations.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class testTwo {
+public class TestTwo {
     Grid testGrid = new Grid(10, 10);
     @Test
     @DisplayName("Second Test")

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class testFive {
+public class TestFive {
 
     Grid testGrid = new Grid(10, 10);
 

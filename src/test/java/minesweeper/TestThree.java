@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class testThree {
+public class TestThree {
     Grid testGrid = new Grid(10, 10);
     @Test
     @DisplayName("Third Test")
