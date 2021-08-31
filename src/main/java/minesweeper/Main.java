@@ -10,14 +10,14 @@ public class Main
 {
     public static void main (String[] args)
     {
-     //   @When("^the player plays the game$")
+       // @When("^the player plays the game$")
         Grid currentGame = new Grid(10, 10);
         boolean gameOver = false;
 
 
         while(!gameOver)
         {
-         //   @Then("^the currentGame Grid is printed$")
+           // @Then("^the currentGame Grid is printed$")
             System.out.println(currentGame);
             int inputX;
             int inputY;
