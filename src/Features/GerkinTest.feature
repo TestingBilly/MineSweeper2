@@ -3,5 +3,5 @@
 
 Feature: Playing the Game
     Scenario: Player starts the game
-        When the player plays the game
-        Then the currentGame Grid is printed
+        When The player plays the Game
+        Then The currentGame Grid is Printed

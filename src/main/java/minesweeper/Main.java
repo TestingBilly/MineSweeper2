@@ -10,7 +10,7 @@ public class Main
 {
     public static void main (String[] args)
     {
-       // @When("^the player plays the game$")
+       //@When("^The player plays the Game$")
         Grid currentGame = new Grid(10, 10);
         boolean gameOver = false;
 

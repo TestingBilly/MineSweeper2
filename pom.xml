@@ -14,7 +14,7 @@
     <groupId>groupId</groupId>
     <artifactId>Minesweeper2</artifactId>
     <version>1.0-SNAPSHOT</version>
-    
+
     <packaging>jar</packaging>
 
     <dependencies>
@@ -65,10 +65,19 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.3.9</version>
+        </dependency>
+        <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>1.0.2</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
 
