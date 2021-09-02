@@ -5,12 +5,17 @@ import cucumber.annotation.en.Then;
 import cucumber.annotation.en.When;
 import gherkin.formatter.model.Feature;
 import gherkin.formatter.model.Scenario;
+import org.junit.runner.RunWith;
+
+
+
 
 public class Main
 {
     public static void main (String[] args)
     {
-       //@When("^The player plays the Game$")
+
+     // @When("^The player plays the Game$")
         Grid currentGame = new Grid(10, 10);
         boolean gameOver = false;
 
